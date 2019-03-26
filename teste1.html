@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans+Condensed:300|Roboto|Roboto+Condensed" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #fa0606;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/* grid 960px */
+.linha{
+  width: 960px;
+  margin: 0 auto;
+  /* deixa centralizado, no meio da pagina */
+  overflow: auto;
+  /* evita problemas futuros de layout */
+  padding: 0;
+  /* espassamento entre linhas */
+}
+.coluna{
+  padding: 0 10px;
+  /*espassamento entre colunas, isso influi na conta dos 960px, que dividido por
+  12 da 80, menos 10 de cada lado da 60*/
+  float: left;
+}
+
+/* com esse espassamento definimos aqui abaixo o tamanho de cada coluna: */
+
+.col1{
+  /*width: 60px;*/
+    width: 6.25%;
+}
+
+.col2{
+  /*width: 140px;*/
+  width: 14.583333%;
+}
+.col3{
+  /*width: 220px;*/
+  width: 22.916667%;
+}
+.col4{
+  /*width: 300px;*/
+  width: 31.25%;
+}
+.col5{
+  /*width: 380px;*/
+  width: 39.583333%;
+}
+.col6{
+  /*width: 460px;*/
+  width: 47.916667%;
+}
+.col7{
+  /*width: 540px;*/
+  width: 56.25%;
+}
+.col8{
+  /*width: 620px;*/
+  width: 64.583333%;
+}
+.col9{
+  /*width: 700px;*/
+  width: 72.916667%;
+}
+.col10{
+  /*width: 780px;*/
+  width: 81.25%;
+}
+.col11{
+  /*width: 860px;*/
+  width: 89.583333%;
+}
+.col12{
+  /*width: 940px;*/
+  width: 97.916667%;
+}
+
+/* estilos reutilizaveis */
+
+.header {
+  width: 100%;
+  height: auto;
+}
+
+nav {
+  text-align: right;
+}
+
+
+nav ul {
+    list-style-type: none;
+    /*padding: 0;*/
+}
+
+nav ul li {
+    padding-right: 3vw;
+    display: inline;
+    font-size: 1.2vw;
+}
+
+ul.inline li:last-child, ol.inline li:last-child{
+  margin-right: 0;
+  /* o ultimo li em linha tanto de ul quanto ol tem que ter margem sempre 0! */
+}
+
+hr {
+  padding: 0;
+  background-color: #fa0606;
+  width: 100%;
+  height: auto;
+  float: right;
+  margin: 0;
+}
+
+.mytext {
+  padding-top: 12%;
+}
+
+#myname {
+  font-size: 3.5vw;
+  text-align: center;
+}
+
+span {
+  color: black;
+}
+
+.edel {
+  color: silver;
+}
+
+.lm {
+  color: yellow;
+}
+
+.mywebdev {
+  font-size: 1.2vw;
+  text-align: center;
+  letter-spacing: 1vw;
+}
+
+.myberlin {
+  font-size: 1.2vw;
+  text-align: center;
+}
+
+.myphoto {
+  float: left;
+  width: 60%;
+  padding-top: 0;
+  max-width: 100%;
+  height: auto;
+}
+}
+
+
+.myinsta {
+  width: 10%;
+}
+
+
+img{
+  max-width: 100%;
+  height: auto;
+  /* com isso ja ajeita as img dentro do site */
+}
+
+footer {
+   overflow: hidden;
+   text-align: center;
+   clear: both;
+   color: #fff;
+   padding-top: 10px;
+}
+
+.footer {
+  background-color: #fa0606;
+  font-size: 1.2vw;
+  color: #fff;
+  width: 100%;
+  height: auto;
+}
+
+.mycopy {
+  margin: 10px 0 0 0;
+}
+
+.myprivacy, .mycv {
+    padding: 15px;
+}
+
+a {
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: red;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*.active {
+  background-color: #4CAF50;
+  color: white;
+}*/
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .topnav a/*:not(:first-child)*/ {
+    display: none;
+  }
+  .topnav a.icon {
+    float: left;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+  <div class="linha">
+    <header class="header">
+      <div class="topnav" id="myTopnav">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="skills.html">SKILLS</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+      </div>
+      <hr>
+   </header>
+  </div>
+
+  <div class="linha home">
+      <div class="coluna col4 mytext">
+        <h1 id="myname"><span>A</span>LB<span>ERT</span> J.<br><span class="edel">EDE<span class="lm">LM</span>ANN</span></h1>
+        <h2 class="mywebdev">Web Developer</h2>
+        <h3 class="myberlin">based in Berlin, Germany</h3>
+      </div>
+      <div class="coluna col8">
+        <img src="img/totizeke.png" class="myphoto">
+      </div>
+  </div>
+
+
+  <div class="linha">
+   <div class="footer">
+      <footer>
+        <div class="coluna col4 mycv">
+          <span><a href="albert-edelmann-cv.pdf">Print a resume</a></span>
+        </div>
+        <div class="coluna col4 copy">
+          <p>&copy 2019 - AJEdelmann Web Development</p>
+          <a href="https://www.instagram.com/albert_toti/" rel="external" target="_blank"><img src="img/instaicon1.png" alt="instagram" class="myinsta"></a>
+        </div>
+        <div class="coluna col4 myprivacy">
+          <span class="myprivacy"><a href="privacy.html">Privacy policy</a></span>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>

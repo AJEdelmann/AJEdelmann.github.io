@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Teste hamburguer</title>
+    <script type="text/javascript">
+    $(document).ready(function(){
+
+      var menu = $(".menu");
+      var hamburger = $(".hamburger");
+      var line = $(".line");
+      var menuOpen;
+
+      function openMenu(){
+        menu.css("left", "0px");
+        line.css("background", "#FFF");
+        menuOpen = true;
+      }
+
+      function closeMenu(){
+        menu.css("left", "-320px");
+        line.css("background", "#BCAD90");
+        menuOpen = false;
+      }
+
+      function toggleMenu(){
+        if (menuOpen) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      }
+
+      hamburger.on({
+        mouseenter: function(){
+          openMenu();
+        }
+      });
+
+      menu.on({
+        mouseleave: function(){
+          closeMenu();
+        }
+
+      });
+
+      hamburger.on({
+        click: function(){
+          toggleMenu();
+        }
+      })
+
+
+    });
+    </script>
+
+    <style media="screen">
+      body {
+  background: #DDD8D5;
+  color: #91966E;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Helvetica Neue';
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+h1, h5 {
+  font-weight: 100;
+}
+
+section {
+  background: #E4E4E6;
+  padding: 6rem 3rem;
+  margin: 0;
+}
+
+.hamburger {
+  position: absolute;
+  margin: 50px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.line {
+  width: 50px;
+  height: 6px;
+  background: #BCAD90;
+  margin-bottom: 5px;
+}
+
+.menu {
+  width: 320px;
+  height: 100%;
+  background: #BCAD90;
+  position: fixed;
+  top: 0;
+  left: -320px;
+  transition: left .1s;
+}
+
+.menu-item:first-child {
+  margin-top: 180px;
+}
+
+.menu--open {
+  left: 0;
+}
+
+.menu-item {
+  color: #fff;
+  width: 100%;
+  padding: 1rem 3rem;
+  box-sizing: border-box;
+}
+
+.menu-item:hover {
+  background: #91966E;
+  cursor: pointer;
+}
+    </style>
+
+  </head>
+  <body>
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+
+    <nav class="menu">
+      <ul>
+        <li class="menu-item"><a href="#0">Home</a></li>
+        <li class="menu-item"><a href="#0">About</a></li>
+        <li class="menu-item"><a href="#0">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <h1>meu teste</h1>
+      <h5>vamo ver no q vai da</h5>
+    </section>
+  </body>
+
+</html>
