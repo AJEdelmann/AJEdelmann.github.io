@@ -1,11 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: #fa0606;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
 /* grid 960px */
-.linha {
-  width: 97.916667%;
+.linha{
+  width: 960px;
   margin: 0 auto;
   /* deixa centralizado, no meio da pagina */
   overflow: auto;
@@ -13,8 +17,7 @@ body {
   padding: 0;
   /* espassamento entre linhas */
 }
-
-.coluna {
+.coluna{
   padding: 0 10px;
   /*espassamento entre colunas, isso influi na conta dos 960px, que dividido por
   12 da 80, menos 10 de cada lado da 60*/
@@ -23,95 +26,81 @@ body {
 
 /* com esse espassamento definimos aqui abaixo o tamanho de cada coluna: */
 
-.col1 {
-  /*  width: 60px; */
-  width: 6.25%;
+.col1{
+  /*width: 60px;*/
+    width: 6.25%;
 }
 
-.col2 {
-  /*  width: 140px; */
+.col2{
+  /*width: 140px;*/
   width: 14.583333%;
 }
-
-.col3 {
-  /*  width: 220px; */
+.col3{
+  /*width: 220px;*/
   width: 22.916667%;
 }
-
-.col4 {
-  /*  width: 300px; */
+.col4{
+  /*width: 300px;*/
   width: 31.25%;
 }
-
-.col5 {
-  /*  width: 380px; */
+.col5{
+  /*width: 380px;*/
   width: 39.583333%;
 }
-
-.col6 {
-  /*  width: 460px; */
+.col6{
+  /*width: 460px;*/
   width: 47.916667%;
 }
-
-.col7 {
-  /*  width: 540px; */
+.col7{
+  /*width: 540px;*/
   width: 56.25%;
 }
-
-.col8 {
-  /*  width: 620px; */
+.col8{
+  /*width: 620px;*/
   width: 64.583333%;
 }
-
-.col9 {
-  /*  width: 700px; */
+.col9{
+  /*width: 700px;*/
   width: 72.916667%;
 }
-
-.col10 {
-  /*  width: 780px; */
+.col10{
+  /*width: 780px;*/
   width: 81.25%;
 }
-
-.col11 {
-  /*  width: 860px; */
+.col11{
+  /*width: 860px;*/
   width: 89.583333%;
 }
-
-.col12 {
-  /*  width: 940px; */
+.col12{
+  /*width: 940px;*/
   width: 97.916667%;
 }
 
 /* estilos reutilizaveis */
+
+.header {
+  width: 100%;
+  height: auto;
+}
 
 
 nav {
   text-align: right;
 }
 
-/*top: 0;
-   background-color: rgba(50,60,70,0.8);
-   width: 30%;
-   padding: 5px 0;
-   height: 3.8%;*/
-}
 
 nav ul {
-  list-style-type: none;
-  /*padding: 0;*/
-  text-align: right;
+    list-style-type: none;
+    /*padding: 0;*/
 }
 
 nav ul li {
-  padding-right: 20px;
-  display: inline;
-  text-align: right;
-  font-size: 1.3em;
+    padding-right: 3vw;
+    display: inline;
+    font-size: 1.2vw;
 }
 
-ul.inline li:last-child,
-ol.inline li:last-child {
+ul.inline li:last-child, ol.inline li:last-child{
   margin-right: 0;
   /* o ultimo li em linha tanto de ul quanto ol tem que ter margem sempre 0! */
 }
@@ -120,16 +109,17 @@ hr {
   padding: 0;
   background-color: #fa0606;
   width: 100%;
+  height: auto;
   float: right;
   margin: 0;
 }
 
 .mytext {
-  padding-top: 120px;
+  padding-top: 12%;
 }
 
 #myname {
-  font-size: 3.8em;
+  font-size: 3.5vw;
   text-align: center;
 }
 
@@ -146,59 +136,59 @@ span {
 }
 
 .mywebdev {
-  font-size: 1.2em;
+  font-size: 1.2vw;
   text-align: center;
-  letter-spacing: 0.8em;
+  letter-spacing: 1vw;
 }
 
 .myberlin {
-  font-size: 1.3em;
+  font-size: 1.2vw;
   text-align: center;
 }
 
 .myphoto {
   float: left;
-  padding-left: 40px;
-  width: 38%;
+  width: 60%;
   padding-top: 0;
+  max-width: 100%;
+  height: auto;
+}
 }
 
 
 .myinsta {
-  width: 2em;
+  width: 10%;
 }
 
 
-img {
+img{
   max-width: 100%;
   height: auto;
   /* com isso ja ajeita as img dentro do site */
 }
 
 footer {
-  margin: auto;
-  overflow: auto;
-  text-align: center;
-  clear: both;
-  height: 20%;
-  color: #fff;
-  padding-top: 10px;
-  overflow: hidden;
+   overflow: hidden;
+   text-align: center;
+   clear: both;
+   color: #fff;
+   padding-top: 10px;
 }
 
 .footer {
   background-color: #fa0606;
-  font-size: 11pt;
+  font-size: 1.2vw;
   color: #fff;
+  width: 100%;
+  height: auto;
 }
 
 .mycopy {
   margin: 10px 0 0 0;
 }
 
-.myprivacy,
-.mycv {
-  padding-top: 20px;
+.myprivacy, .mycv {
+    padding: 15px;
 }
 
 a {
@@ -214,29 +204,30 @@ nav ul li a:hover {
   color: #5a3d08;
 }
 
-.myprivacy a,
-.mycv a {
-  color: #fff;
+.myprivacy a, .mycv a{
+    color: #fff;
 }
 
-.myprivacy a:hover,
-.mycv a:hover {
-  color: yellow;
+.myprivacy a:hover, .mycv a:hover{
+    color: yellow;
 }
 
 /*here starts the ABOUT page*/
 
 .myabout {
-  background-image: url(coffe.png);
+  background-image: url(../img/coffe.png);
+  background-repeat: no-repeat;
   background-size: cover;
-  height: inherit;
-  width: 100%
+  width: 100%;
+  height: auto;
 }
 
-.whatido,
-.howdid {
+.whatido, .howdid {
   background-color: #fcfafaed;
-  border-radius: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 3vw;
+
   border: double;
   color: black;
   padding: 29px 0;
@@ -251,39 +242,48 @@ nav ul li a:hover {
 /*Typography*/
 
 .myh2 {
-  font-size: 2.0em;
+  font-size: 3.3vw;
   color: #b92f16;
 }
-
-.myh3,
-.myh4 {
+.myh3, .myh4 {
   color: black;
   font-weight: bold;
 }
 
 .myh3 {
-  font-size: 1.5em;
+  font-size: 2.2vw;
 }
 
 .myh4 {
-  font-size: 1.2em;
+  font-size: 1.5vw;
 }
 
 /*here starts the SKILLS page*/
 
 .myskills {
-  background-image: url(meeting.jpg);
+  background-image: url(../img/meeting.jpg);
   background-size: cover;
   border-radius: 10px;
 }
 
-.myknowledge,
-.myexperience,
+.myh2skill {
+  font-size: 1.8vw;
+}
+
+.myliskill {
+  font-size: 1.3vw;
+}
+
+#mytable {
+  font-size: 1.3vw;
+}
+
+.myknowledge, .myexperience,
 .myeducation {
-  background-color: #fcfafaed;
-  border-radius: 30px;
-  border: double;
-  color: black;
+    background-color: #fcfafaed;
+    border-radius: 30px;
+    border: double;
+    color: black;
 }
 
 .myknowledge {
@@ -295,108 +295,98 @@ nav ul li a:hover {
   float: right;
 }
 
-.myexperience a {
+.myexperience a, .myeducation a {
   color: #fa0606;
 }
 
-.myexperience ul li {
-  font-size: 13pt;
+.myexperience ul li, .myeducation ul li {
+  font-size: 1.4vw;
   font-weight: bold;
 }
 
 .myeducation {
-  float: right;
-  margin: 15px 0;
+    float: right;
+    margin: 15px 0;
 }
-
-.myeducation a {
-  color: #fa0606;
-}
-
-.myeducation ul li {
-  font-size: 13pt;
-  font-weight: bold;
-}
-
 
 .sk {
-  font-size: 3vmin;
-  font-weight: bold;
-}
+      font-size: 3vmin;
+      font-weight: bold;
+  }
 
-#bar {
-  width: 60%;
-  height: 20px;
-  border-radius: 10px;
-  background-color: rgba(0, 26, 21, 0.4);
-}
+  #bar {
+      width: 80%;
+      height: 20px;
+      border-radius: 10px;
+      background-color: rgba(0, 26, 21, 0.4);
+  }
 
-#fill {
-  width: 65%;
-  height: 20px;
-  border-radius: 10px;
-  background-color: rgba(0, 26, 21, 0.6);
-}
+  #fill {
+      width: 45%;
+      height: 20px;
+      border-radius: 10px;
+      background-color: rgba(0, 26, 21, 0.6);
+  }
 
-#fill1 {
-  width: 70%;
-  height: 20px;
-  border-radius: 10px;
-  background-color: rgba(0, 26, 21, 0.6);
-}
+  #fill1 {
+      width: 45%;
+      height: 20px;
+      border-radius: 10px;
+      background-color: rgba(0, 26, 21, 0.6);
+  }
 
-#fill2 {
-  width: 10%;
-  height: 20px;
-  border-radius: 10px;
-  background-color: rgba(0, 26, 21, 0.6);
-}
+  #fill2 {
+      width: 10%;
+      height: 20px;
+      border-radius: 10px;
+      background-color: rgba(0, 26, 21, 0.6);
+  }
 
-#fill3 {
-  width: 90%;
-  height: 20px;
-  border-radius: 10px;
-  background-color: rgba(0, 26, 21, 0.6);
-}
+  #fill3 {
+      width: 90%;
+      height: 20px;
+      border-radius: 10px;
+      background-color: rgba(0, 26, 21, 0.6);
+  }
 
-#fill4 {
-  width: 90%;
-  height: 20px;
-  border-radius: 10px;
-  background-color: rgba(0, 26, 21, 0.6);
-}
+  #fill4 {
+      width: 90%;
+      height: 20px;
+      border-radius: 10px;
+      background-color: rgba(0, 26, 21, 0.6);
+  }
 
-#fill5 {
-  width: 80%;
-  height: 20px;
-  border-radius: 10px;
-  background-color: rgba(0, 26, 21, 0.6);
-}
+  #fill5 {
+      width: 80%;
+      height: 20px;
+      border-radius: 10px;
+      background-color: rgba(0, 26, 21, 0.6);
+  }
 
-#fill6 {
-  width: 45%;
-  height: 20px;
-  border-radius: 10px;
-  background-color: rgba(0, 26, 21, 0.6);
-}
+  #fill6 {
+      width: 45%;
+      height: 20px;
+      border-radius: 10px;
+      background-color: rgba(0, 26, 21, 0.6);
+  }
 
-#fill7 {
-  width: 100%;
-  height: 20px;
-  border-radius: 10px;
-  background-color: rgba(0, 26, 21, 0.6);
-}
+  #fill7 {
+      width: 100%;
+      height: 20px;
+      border-radius: 10px;
+      background-color: rgba(0, 26, 21, 0.6);
+  }
 
-#fill8 {
-  width: 95%;
-  height: 20px;
-  border-radius: 10px;
-  background-color: rgba(0, 26, 21, 0.6);
-}
+  #fill8 {
+      width: 95%;
+      height: 20px;
+      border-radius: 10px;
+      background-color: rgba(0, 26, 21, 0.6);
+  }
 
-.procent {
-  text-align: center;
-  color: white;
+  .procent {
+    text-align: center;
+    color: white;
 }
 
 .dci {
@@ -407,11 +397,17 @@ nav ul li a:hover {
 .date {
   color: #032679e0;
   font-weight: bold;
+  font-size: 1.3vw;
 }
 
 .underline {
   color: black;
   font-weight: bold;
+  font-size: 1.2vw;
+}
+
+.myspanskill {
+  font-size: 1.2vw;
 }
 
 /* Here starts the portfolio page */
@@ -436,18 +432,22 @@ nav ul li a:hover {
 }
 
 .microsite {
-  font-size: 2em;
+  font-size: 2.2vw;
   color: #ffff00;
   font-weight: bold;
 }
 
+.microdescrip {
+  font-size: 1.6vw;
+}
+
 .myconcept {
   padding-left: 10%;
+  font-size: 1.3vw;
 }
 
 .techno {
   color: #ffff00;
-  font-size: 13pt;
 }
 
 /* ________________________________________________________________
@@ -462,18 +462,23 @@ _________________________________________________________________*/
   padding: 50px 0;
 }
 
-.mybrief,
-.myinterest {
+.mybrief, .myinterest {
   color: black;
   font-size: 1.5em;
 }
 
 .myicon {
-  text-align: center;
+  text-align: right;
 }
 
-.fas fa-map-marker-alt {
-  font-size: 3em;
+.mydetails {
+  text-align: left;
+}
+
+.myh2contact {
+  font-size: 2.4vw;
+  text-align: center;
+  color: red;
 }
 
 .mylists {
@@ -482,30 +487,16 @@ _________________________________________________________________*/
   color: black;
 }
 
-.myinfo {
-  padding-top: 15%;
-}
-
-#clientfirst {
+.cliententry {
   color: red;
   border: none;
-}
-
-.employer {
-  border: none;
-  color: red;
-}
-
-.contactme {
-  border: none;
-  color: red;
 }
 
 #msg {
-  width: 90%;
-  height: auto;
-  font-size: 1em;
-  color: red;
+    width: 90%;
+    height: auto;
+    font-size: 1em;
+    color: red;
 }
 
 .botao {
@@ -522,10 +513,26 @@ _________________________________________________________________*/
 
 #myprivacycontent {
   color: black;
-  font-size: 1.27em;
+  font-size: 1.3em;
 }
 
 .myprivacyh1 {
   font-size: 2.8em;
   text-align: center;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+[class*="col"] {
+  float: left;
+}
+
+.linha::after {
+content: "";
+clear: both;
+display: table;
 }
