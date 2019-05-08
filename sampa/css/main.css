@@ -87,6 +87,7 @@ h1 {
 nav ul {
     list-style: none;
     text-align: center;
+    padding-inline-start: 0;
 }
 
 nav ul li {
@@ -217,7 +218,7 @@ footer {
 }
 
 footer:hover {
-    color: #8fb90c;
+    color: hsla(70, 18%, 93%, 0.842);
 }
 
 /* ANIMATIONS */
@@ -315,14 +316,14 @@ footer:hover {
     }
     
     nav ul li {
-        margin: 0.9rem 0.4rem;
+        margin: 0.9rem 0.2rem;
     }
 
     #intro #sp h1 {
         font-size: 1.3rem;
     }  
     
-    p, h2, a {
+    p, h2 {
         margin: 0.5rem;
     }
 
