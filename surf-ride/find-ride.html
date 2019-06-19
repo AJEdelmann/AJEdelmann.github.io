@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Surf Ride Project</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- HEADER starts here -->
+    <div class="row w-100 my-header">
+        <nav class="col navbar navbar-expand-lg navbar-light px-5">
+            <a class="navbar-brand" href="index.html"><img src="assets/images/logo2.jpg" width="150" height="auto"
+                    alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav d-flex align-items-end">
+                    <li class="nav-item active">
+                        <a class="nav-link" id="my-nav" href="find-ride.html"><i class="fas fa-search"></i> Find a
+                            Ride<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" id="my-nav" href="offer-ride.html"><i class="fas fa-plus-circle"></i> Offer
+                            a Ride<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" id="my-nav" href="sign-up.html">Sign Up<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" id="my-nav" href="login.html">Log in<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- HEADER ends here -->
+
+    <!-- MAIN starts here -->
+    <div class="wrapper-find">
+        <h2 class="find-h2">Find a Ride</h2>
+        <div class="selectors">
+            <div class="row my-border mt-3 pt-2 mb-2 pb-2">
+                <a href="" class="leavingFrom">
+                    <div class="lf-text">
+                        <span class="span-text">Leaving From</span>
+                    </div>
+                </a>
+            </div>
+            <div class="row my-border mt-3 pt-2 mb-2 pb-2">
+                <a href="" class="goingTo">
+                    <div class="gt-text">
+                        <span class="span-text">Going to</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="my-date-time mt-3 pt-2 mb-2 pb-2 border-t border-b border-solid border-grey-light">
+            <a href="">
+                <div>
+                    <span class="span-text font-weight-bold">Date and Time</span><br>
+                    <i class="far fa-calendar-alt span-date"></i>
+                    <time class="text-m mb-l block span-date">today 21:00</time>
+                </div>
+            </a>
+        </div>
+        <div class="my-find-button">
+            <a href="index.html">
+                <button class="btn btn-primary" id="my-search" type="submit">Search</button></a>
+        </div>
+    </div>
+
+    <!-- MAIN ends here -->
+
+    <!-- FOOTER starts here -->
+    <div class="row my-footer">
+        <div class="row w-100">
+            <div class="col-3 my-nav-footer">
+                <ul class="my-nav-list my-nav-text">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Frequently Asked Questions</a></li>
+                </ul>
+            </div>
+            <div class="col-3 my-nav-footer">
+                <ul class="my-nav-list my-nav-text">
+                    <li><a href="#">Invite Friends</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Legal Documents</a></li>
+                </ul>
+            </div>
+            <div class="col-3 my-nav-footer">
+                <ul class="my-nav-list my-nav-text">
+                    <li><a href="#">Update cookie settings</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Imprint</a></li>
+                </ul>
+            </div>
+            <div class="col-3 my-social text-center">
+                <div class="row align-items-center">
+                    <i class="fas fa-globe mr-1 my-nav-list"></i>
+                    <select id="footerLanguage">
+                        <label for="footerLanguage"><span>Language</span></label>
+                        <option value="en_GB">English</option>
+                        <option value="de_DE">Deutsch</option>
+                        <option value="es_ES">Español</option>
+                        <option value="fr_FR">Français</option>
+                        <option value="pt_BR">Português (Br)</option>
+                        <option value="ru_RU">Русский</option>
+                    </select>
+                </div>
+                <hr>
+                <div class="row">
+                    <ul class="my-nav-list my-media">
+                        <li class="mr-2">
+                            <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                        </li>
+                        <li class="mr-2">
+                            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row w-100 align-items-center justify-content-center">
+            <h6>&copy Surf Ride Inc. - All rights reserved.</h6>
+        </div>
+    </div>
+    <!-- FOOTER ends here -->
+
+    <!-- Fontawesome link -->
+    <script src="https://kit.fontawesome.com/86ef84e8fb.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

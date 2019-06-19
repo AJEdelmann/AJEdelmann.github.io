@@ -1,0 +1,607 @@
+// VARIABLES
+$primary: #000000c9;
+$secondary: rgb(33, 95, 167);
+$intro-p: #0e585b;
+$peace: #fff;
+$ocean: blue;
+$bg-box: linear-gradient(#d3d3d369, #d3d3d30d);
+$bg-card: linear-gradient(to right, #c7d7e6, #c7d7e633);
+$bg-footer: #d3d3d369;
+$surfing: radial-gradient(#c25856, #4f929a, #d2ba85, #aa8658);
+
+// MIXINGS
+@mixin malu($size, $weight) {
+    font-size: $size;
+    font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-weight: $weight;
+}
+
+@mixin surf-boards() {
+    background-image: $surfing;
+    border-radius: 42%;
+}
+
+// GLOBAL STYLES
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+// HOMEPAGE - HEADER
+.my-header {
+    position: fixed;
+    height: 80px;
+    background-color: $peace;
+    opacity: 0.98;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0.5px 4px #88888847;
+
+    #my-nav {
+        color: $primary;
+        @include malu(1.1rem, 700);
+    }
+
+    #my-nav:hover {
+        color: $ocean;
+        font-size: 1.2rem;
+    }
+}
+
+#navbarNavDropdown {
+    background-color: $peace;
+    opacity: 0.98;
+    z-index: 100;
+}
+
+#jumbo-margin {
+    margin-bottom: 0;
+
+    #my-ride {
+        @include malu(1.1rem, 700);
+    }
+}
+
+#my-ride:hover {
+    @include surf-boards();
+}
+
+// HOMEPAGE - MAIN CONTENT
+.my-intro {
+    opacity: 0.7;
+    height: -webkit-fill-available;
+    background: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/b1b17f32875401.5a58ed64169e7.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    .my-button {
+        text-align: center;
+        margin-top: 37px;
+
+        .intro-h1 {
+            color: $primary;
+            @include malu(4rem, 700);
+            animation-duration: 8s;
+            animation-name: my-question;
+            animation-iteration-count: infinite;
+        }
+
+        .intro-p {
+            color: $intro-p;
+            @include malu(1.3rem, 700);
+        }
+    }
+}
+
+
+@keyframes my-question {
+    0% {
+        opacity: 0;
+    }
+
+    22% {
+        opacity: 0.9;
+    }
+
+    45% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.my-driver-box {
+    height: -webkit-fill-available;
+    background-image: $bg-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .my-app {
+        animation: 8s infinite my-mobile;
+    }
+
+    .my-driver {
+        animation: 8s infinite my-ride;
+    }
+}
+
+// app animation
+@keyframes my-mobile {
+    0% {
+        transition: all 1s ease-in-out;
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.3);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+// driver animation
+@keyframes my-ride {
+    0% {
+        transform: initial;
+    }
+
+    25% {
+        transform: rotate(360deg);
+    }
+
+    50% {
+        transform: initial;
+    }
+
+    100% {
+        transform: initial;
+    }
+}
+
+.my-offer {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+
+    h2 {
+        @include malu(2.4rem, 700);
+    }
+
+    p {
+        @include malu(1.5rem, 300);
+    }
+
+    .my-buttons {
+        @include malu(1.1rem, 700);
+    }
+
+    .my-buttons:hover {
+        @include surf-boards();
+    }
+}
+
+.my-experience {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: $bg-card;
+    min-height: 600px;
+
+    h2 {
+        @include malu(2.4rem, 700);
+    }
+
+    .my-cards {
+        margin-bottom: 25px;
+        width: 80%;
+
+        h5 {
+            @include malu(1.5rem, 700);
+        }
+
+        p {
+            @include malu(1.3rem, 300);
+        }
+
+        .find-more {
+            color: $ocean;
+        }
+
+        .find-more:hover {
+            color: rgb(25, 85, 163);
+        }
+    }
+}
+
+// HOMEPAGE - FOOTER
+.my-footer {
+    height: 300px;
+    background-color: $bg-footer;
+
+    .my-nav-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .my-nav-text {
+            @include malu(1.2rem, 300);
+            line-height: 2rem;
+            color: $primary;
+            text-decoration: none;
+        }
+    }
+}
+
+.my-nav-list {
+    list-style: none;
+}
+
+a {
+    color: $primary;
+}
+
+a:hover {
+    color: $ocean;
+    text-decoration: none;
+}
+
+.my-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    #footerLanguage {
+        padding: 3px;
+        @include malu(1.1rem, 300);
+    }
+}
+
+.my-media {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h6 {
+    @include malu(1rem, 300);
+}
+
+// FIND A RIDE STARTS HERE
+.wrapper-find {
+    height: -webkit-fill-available;
+
+    .find-h2 {
+        position: relative;
+        top: 150px;
+        text-align: -webkit-center;
+        color: $primary;
+        @include malu(2.4rem, 700);
+    }
+
+    .selectors {
+        position: relative;
+        top: 170px;
+        text-align: -webkit-center;
+
+        .my-border {
+            border: 1px solid lightgray;
+            width: 85%;
+            background: $bg-footer;
+            border-radius: 1rem;
+        }
+    }
+}
+
+.span-text {
+    padding-left: 8px;
+    color: #615757bf;
+    @include malu(1.2rem, 300);
+}
+
+.my-date-time {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    width: 85%;
+    margin-left: 8vw;
+    position: relative;
+    top: 190px;
+
+    .span-date {
+        padding-left: 8px;
+        color: blue;
+    }
+}
+
+.my-find-button {
+    position: relative;
+    top: 210px;
+    text-align: -webkit-center;
+
+    #my-search {
+        padding: 10px 20px;
+        border-radius: 25px;
+        @include malu(1.2rem, 700);
+    }
+
+    #my-search:hover {
+        @include surf-boards();
+        padding: 5px 30px;
+    }
+}
+
+// OFFER A RIDE PAGE STARTS HERE
+.wrapper {
+    min-height: 730px;
+    padding: 1rem 2rem;
+
+    .offer-h2 {
+        position: relative;
+        top: 90px;
+        color: $primary;
+        @include malu(1.2rem, 700);
+    }
+}
+
+.my-forms {
+    position: relative;
+    top: 100px;
+
+    .main-block {
+        border: 1px solid lightgray;
+        margin-bottom: 10px;
+
+        .header-main-block {
+            border-bottom: 1px solid lightgray;
+            background-color: $peace;
+
+            .h4-text {
+                @include malu(0.9rem, 700);
+                padding-left: 5px;
+                padding-top: 3px;
+            }
+        }
+    }
+}
+
+.main-block-content {
+    background-color: $bg-footer;
+
+    .control-label {
+        margin: 0;
+        margin-top: .5rem;
+        @include malu(0.8rem, 700);
+        padding-left: 5px;
+    }
+}
+
+.box-input {
+    text-align: center;
+}
+
+.h3-text {
+    margin-bottom: 0;
+    margin-top: .8rem;
+    @include malu(0.8rem, 700);
+    padding-left: 5px;
+}
+
+#stop-label {
+    margin: 0;
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+#pickup,
+#drop-off,
+#stopover {
+    border-radius: 0.3rem;
+    @include malu(0.6rem, 300);
+    width: 85%;
+    padding: 0.4rem;
+    color: #615757bf;
+}
+
+.continue-button {
+    text-align: -webkit-right;
+}
+
+#my-continue {
+    @include malu(1rem, 700);
+}
+
+#my-continue:hover {
+    @include surf-boards();
+}
+
+.offer-map {
+    position: relative;
+    top: 100px;
+    border: 1px solid lightgray;
+    height: auto;
+}
+
+iframe {
+    margin-top: 0.5rem;
+}
+
+// SIGN UP && LOGIN PAGES STARTS HERE
+.wrapper-surf {
+    height: -webkit-fill-available;
+
+    .sign-h2 {
+        position: relative;
+        top: 150px;
+        text-align: -webkit-center;
+        color: $primary;
+        @include malu(1.6rem, 700);
+    }
+}
+
+.sign-text {
+    @include malu(1.3rem, 300);
+    color: $primary;
+    padding-top: 5px;
+}
+
+a {
+    .continue-face {
+        position: relative;
+        top: 170px;
+        padding-left: 9vw;
+
+        .my-facebook {
+            color: $ocean;
+        }
+    }
+}
+
+.my-chevron {
+    color: #a39e9e;
+}
+
+.my-hr {
+    position: relative;
+    top: 185px;
+    text-align: -webkit-center;
+
+    .sign-hr {
+        width: 80vw;
+        margin: auto;
+    }
+}
+
+.continue-email {
+    position: relative;
+    top: 200px;
+    padding-left: 9vw;
+}
+
+.login-member {
+    position: relative;
+    top: 230px;
+    padding-left: 13vw;
+    margin-bottom: 0;
+    @include malu(1.1rem, 300);
+
+    .sign-link {
+        color: $ocean;
+        @include malu(1.1rem, 700);
+    }
+}
+
+.login-footer {
+    position: relative;
+    top: 240px;
+    padding-left: 13vw;
+    font-size: 0.8rem;
+
+    span {
+        @include malu(0.9rem, 300);
+
+        .sign-link {
+            color: $ocean;
+            @include malu(0.9rem, 700);
+        }
+    }
+}
+
+.sign-link:hover {
+    color: $secondary;
+}
+
+// RESPONSIVE DESIGN - MEDIA QUERIES
+@media (max-width: 832px) {
+    .my-cards {
+        flex-flow: column wrap;
+
+        #my-card-space {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    .login-member,
+    .login-footer {
+        padding-left: 11vw;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .login-member,
+    .login-footer {
+        padding-left: 10vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .my-reasons {
+        flex-flow: column wrap;
+        margin: 20px;
+    }
+
+    .my-driver-box {
+        display: none;
+    }
+
+    .my-offer {
+        margin: 20px 10px;
+    }
+
+    .my-intro {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .my-social {
+        padding-right: 30px;
+
+        #footerLanguage {
+            padding: 0;
+            @include malu(0.8rem, 300);
+        }
+    }
+
+    .my-footer {
+
+        .my-nav-footer {
+
+            .my-nav-text {
+                @include malu(1rem, 300);
+            }
+        }
+    }
+
+    .my-media {
+
+        .fa-2x {
+            font-size: 1.3rem;
+        }
+    }
+
+    h6 {
+        @include malu(0.8rem, 300);
+    }
+}

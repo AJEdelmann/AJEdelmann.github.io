@@ -1,0 +1,457 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.row {
+  margin-right: 0;
+  margin-left: 0; }
+
+.my-header {
+  position: fixed;
+  height: 80px;
+  background-color: #fff;
+  opacity: 0.98;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0.5px 4px #88888847; }
+  .my-header #my-nav {
+    color: #000000c9;
+    font-size: 1.1rem;
+    font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700; }
+  .my-header #my-nav:hover {
+    color: blue;
+    font-size: 1.2rem; }
+
+#navbarNavDropdown {
+  background-color: #fff;
+  opacity: 0.98;
+  z-index: 100; }
+
+#jumbo-margin {
+  margin-bottom: 0; }
+  #jumbo-margin #my-ride {
+    font-size: 1.1rem;
+    font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700; }
+
+#my-ride:hover {
+  background-image: radial-gradient(#c25856, #4f929a, #d2ba85, #aa8658);
+  border-radius: 42%; }
+
+.my-intro {
+  opacity: 0.7;
+  height: -webkit-fill-available;
+  background: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/b1b17f32875401.5a58ed64169e7.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .my-intro .my-button {
+    text-align: center;
+    margin-top: 37px; }
+    .my-intro .my-button .intro-h1 {
+      color: #000000c9;
+      font-size: 4rem;
+      font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+      font-weight: 700;
+      animation-duration: 8s;
+      animation-name: my-question;
+      animation-iteration-count: infinite; }
+    .my-intro .my-button .intro-p {
+      color: #0e585b;
+      font-size: 1.3rem;
+      font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+      font-weight: 700; }
+
+@keyframes my-question {
+  0% {
+    opacity: 0; }
+  22% {
+    opacity: 0.9; }
+  45% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+.my-driver-box {
+  height: -webkit-fill-available;
+  background-image: linear-gradient(#d3d3d369, #d3d3d30d);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .my-driver-box .my-app {
+    animation: 8s infinite my-mobile; }
+  .my-driver-box .my-driver {
+    animation: 8s infinite my-ride; }
+
+@keyframes my-mobile {
+  0% {
+    transition: all 1s ease-in-out;
+    transform: scale(1); }
+  25% {
+    transform: scale(1.3); }
+  50% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes my-ride {
+  0% {
+    transform: initial; }
+  25% {
+    transform: rotate(360deg); }
+  50% {
+    transform: initial; }
+  100% {
+    transform: initial; } }
+
+.my-offer {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center; }
+  .my-offer h2 {
+    font-size: 2.4rem;
+    font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700; }
+  .my-offer p {
+    font-size: 1.5rem;
+    font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300; }
+  .my-offer .my-buttons {
+    font-size: 1.1rem;
+    font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700; }
+  .my-offer .my-buttons:hover {
+    background-image: radial-gradient(#c25856, #4f929a, #d2ba85, #aa8658);
+    border-radius: 42%; }
+
+.my-experience {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, #c7d7e6, #c7d7e633);
+  min-height: 600px; }
+  .my-experience h2 {
+    font-size: 2.4rem;
+    font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700; }
+  .my-experience .my-cards {
+    margin-bottom: 25px;
+    width: 80%; }
+    .my-experience .my-cards h5 {
+      font-size: 1.5rem;
+      font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+      font-weight: 700; }
+    .my-experience .my-cards p {
+      font-size: 1.3rem;
+      font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+      font-weight: 300; }
+    .my-experience .my-cards .find-more {
+      color: blue; }
+    .my-experience .my-cards .find-more:hover {
+      color: #1955a3; }
+
+.my-footer {
+  height: 300px;
+  background-color: #d3d3d369; }
+  .my-footer .my-nav-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .my-footer .my-nav-footer .my-nav-text {
+      font-size: 1.2rem;
+      font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+      font-weight: 300;
+      line-height: 2rem;
+      color: #000000c9;
+      text-decoration: none; }
+
+.my-nav-list {
+  list-style: none; }
+
+a {
+  color: #000000c9; }
+
+a:hover {
+  color: blue;
+  text-decoration: none; }
+
+.my-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .my-social #footerLanguage {
+    padding: 3px;
+    font-size: 1.1rem;
+    font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300; }
+
+.my-media {
+  display: flex;
+  justify-content: space-evenly; }
+
+h6 {
+  font-size: 1rem;
+  font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300; }
+
+.wrapper-find {
+  height: -webkit-fill-available; }
+  .wrapper-find .find-h2 {
+    position: relative;
+    top: 150px;
+    text-align: -webkit-center;
+    color: #000000c9;
+    font-size: 2.4rem;
+    font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700; }
+  .wrapper-find .selectors {
+    position: relative;
+    top: 170px;
+    text-align: -webkit-center; }
+    .wrapper-find .selectors .my-border {
+      border: 1px solid lightgray;
+      width: 85%;
+      background: #d3d3d369;
+      border-radius: 1rem; }
+
+.span-text {
+  padding-left: 8px;
+  color: #615757bf;
+  font-size: 1.2rem;
+  font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300; }
+
+.my-date-time {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  width: 85%;
+  margin-left: 8vw;
+  position: relative;
+  top: 190px; }
+  .my-date-time .span-date {
+    padding-left: 8px;
+    color: blue; }
+
+.my-find-button {
+  position: relative;
+  top: 210px;
+  text-align: -webkit-center; }
+  .my-find-button #my-search {
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700; }
+  .my-find-button #my-search:hover {
+    background-image: radial-gradient(#c25856, #4f929a, #d2ba85, #aa8658);
+    border-radius: 42%;
+    padding: 5px 30px; }
+
+.wrapper {
+  min-height: 730px;
+  padding: 1rem 2rem; }
+  .wrapper .offer-h2 {
+    position: relative;
+    top: 90px;
+    color: #000000c9;
+    font-size: 1.2rem;
+    font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700; }
+
+.my-forms {
+  position: relative;
+  top: 100px; }
+  .my-forms .main-block {
+    border: 1px solid lightgray;
+    margin-bottom: 10px; }
+    .my-forms .main-block .header-main-block {
+      border-bottom: 1px solid lightgray;
+      background-color: #fff; }
+      .my-forms .main-block .header-main-block .h4-text {
+        font-size: 0.9rem;
+        font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 700;
+        padding-left: 5px;
+        padding-top: 3px; }
+
+.main-block-content {
+  background-color: #d3d3d369; }
+  .main-block-content .control-label {
+    margin: 0;
+    margin-top: .5rem;
+    font-size: 0.8rem;
+    font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    padding-left: 5px; }
+
+.box-input {
+  text-align: center; }
+
+.h3-text {
+  margin-bottom: 0;
+  margin-top: .8rem;
+  font-size: 0.8rem;
+  font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 700;
+  padding-left: 5px; }
+
+#stop-label {
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 300; }
+
+#pickup,
+#drop-off,
+#stopover {
+  border-radius: 0.3rem;
+  font-size: 0.6rem;
+  font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+  width: 85%;
+  padding: 0.4rem;
+  color: #615757bf; }
+
+.continue-button {
+  text-align: -webkit-right; }
+
+#my-continue {
+  font-size: 1rem;
+  font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 700; }
+
+#my-continue:hover {
+  background-image: radial-gradient(#c25856, #4f929a, #d2ba85, #aa8658);
+  border-radius: 42%; }
+
+.offer-map {
+  position: relative;
+  top: 100px;
+  border: 1px solid lightgray;
+  height: auto; }
+
+iframe {
+  margin-top: 0.5rem; }
+
+.wrapper-surf {
+  height: -webkit-fill-available; }
+  .wrapper-surf .sign-h2 {
+    position: relative;
+    top: 150px;
+    text-align: -webkit-center;
+    color: #000000c9;
+    font-size: 1.6rem;
+    font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700; }
+
+.sign-text {
+  font-size: 1.3rem;
+  font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+  color: #000000c9;
+  padding-top: 5px; }
+
+a .continue-face {
+  position: relative;
+  top: 170px;
+  padding-left: 9vw; }
+  a .continue-face .my-facebook {
+    color: blue; }
+
+.my-chevron {
+  color: #a39e9e; }
+
+.my-hr {
+  position: relative;
+  top: 185px;
+  text-align: -webkit-center; }
+  .my-hr .sign-hr {
+    width: 80vw;
+    margin: auto; }
+
+.continue-email {
+  position: relative;
+  top: 200px;
+  padding-left: 9vw; }
+
+.login-member {
+  position: relative;
+  top: 230px;
+  padding-left: 13vw;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300; }
+  .login-member .sign-link {
+    color: blue;
+    font-size: 1.1rem;
+    font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700; }
+
+.login-footer {
+  position: relative;
+  top: 240px;
+  padding-left: 13vw;
+  font-size: 0.8rem; }
+  .login-footer span {
+    font-size: 0.9rem;
+    font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300; }
+    .login-footer span .sign-link {
+      color: blue;
+      font-size: 0.9rem;
+      font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+      font-weight: 700; }
+
+.sign-link:hover {
+  color: #215fa7; }
+
+@media (max-width: 832px) {
+  .my-cards {
+    flex-flow: column wrap; }
+    .my-cards #my-card-space {
+      margin-bottom: 20px; } }
+
+@media (min-width: 768px) {
+  .login-member,
+  .login-footer {
+    padding-left: 11vw; } }
+
+@media (min-width: 1200px) {
+  .login-member,
+  .login-footer {
+    padding-left: 10vw; } }
+
+@media (max-width: 576px) {
+  .my-reasons {
+    flex-flow: column wrap;
+    margin: 20px; }
+  .my-driver-box {
+    display: none; }
+  .my-offer {
+    margin: 20px 10px; }
+  .my-intro {
+    padding-right: 0;
+    padding-left: 0; }
+  .my-social {
+    padding-right: 30px; }
+    .my-social #footerLanguage {
+      padding: 0;
+      font-size: 0.8rem;
+      font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+      font-weight: 300; }
+  .my-footer .my-nav-footer .my-nav-text {
+    font-size: 1rem;
+    font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300; }
+  .my-media .fa-2x {
+    font-size: 1.3rem; }
+  h6 {
+    font-size: 0.8rem;
+    font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300; } }
