@@ -238,17 +238,51 @@ nav ul li a:hover {
 }
 
 .whatido,
-.howdid {
+.howdid,
+.myMainStack {
   background-color: #fcfafaed;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 3vw;
-
   border: double;
   color: black;
   padding: 29px 0;
   text-align: center;
   margin: 30px 0;
+  padding: 5px 3px;
+}
+
+.myMainStack {
+  height: 170px;
+}
+
+.whatido {
+  height: 130px;
+}
+
+.howdid {
+  height: 200px;
+}
+
+.mainStack {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.tech-skill {
+  width: 100px;
+  height: 30px;
+  border: 1px solid gray;
+  background: linear-gradient(to left, #fcfafaed, #b92f16);
+  color: #fff;
+  border-radius: 15px;
+  margin: 8px 30px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
 }
 
 /*.transparent {
@@ -258,14 +292,16 @@ nav ul li a:hover {
 /*Typography*/
 
 .myh2 {
-  font-size: 3.3vw;
+  font-size: 2.3vw;
   color: #b92f16;
+  margin: 10px 0;
 }
 
 .myh3,
 .myh4 {
   color: black;
   font-weight: bold;
+  margin: 10px;
 }
 
 .myh3 {
@@ -274,194 +310,6 @@ nav ul li a:hover {
 
 .myh4 {
   font-size: 1.5vw;
-}
-
-/*here starts the SKILLS page*/
-
-.myskills {
-  background-image: url(../img/meeting.jpg);
-  background-size: cover;
-  border-radius: 10px;
-}
-
-.myh2skill {
-  font-size: 1.8vw;
-}
-
-.myliskill {
-  font-size: 1.3vw;
-}
-
-#mytable {
-  font-size: 1.3vw;
-}
-
-.myknowledge,
-.myexperience,
-.myeducation {
-  background-color: #fcfafaed;
-  border-radius: 30px;
-  border: double;
-  color: black;
-}
-
-.myknowledge {
-  margin: 15px 20px 15px 0;
-}
-
-.myexperience {
-  margin: 20px 0;
-  float: right;
-}
-
-.myexperience a,
-.myeducation a {
-  color: #fa0606;
-}
-
-.myexperience ul li,
-.myeducation ul li {
-  font-size: 1.4vw;
-  font-weight: bold;
-}
-
-.myeducation {
-  float: right;
-  margin: 15px 0;
-}
-
-.sk {
-  font-size: 3vmin;
-  font-weight: bold;
-}
-
-#bar {
-  width: 80%;
-  height: 20px;
-  border-radius: 10px;
-  background-color: rgba(0, 26, 21, 0.4);
-}
-
-#fill {
-  width: 100%;
-  height: 20px;
-  border-radius: 10px;
-  background-color: rgba(0, 26, 21, 0.6);
-}
-
-#fill1 {
-  width: 90%;
-  height: 20px;
-  border-radius: 10px;
-  background-color: rgba(0, 26, 21, 0.6);
-}
-
-#fill2 {
-  width: 85%;
-  height: 20px;
-  border-radius: 10px;
-  background-color: rgba(0, 26, 21, 0.6);
-}
-
-#fill3 {
-  width: 80%;
-  height: 20px;
-  border-radius: 10px;
-  background-color: rgba(0, 26, 21, 0.6);
-}
-
-#fill4 {
-  width: 75%;
-  height: 20px;
-  border-radius: 10px;
-  background-color: rgba(0, 26, 21, 0.6);
-}
-
-#fill5 {
-  width: 60%;
-  height: 20px;
-  border-radius: 10px;
-  background-color: rgba(0, 26, 21, 0.6);
-}
-
-#fill6 {
-  width: 50%;
-  height: 20px;
-  border-radius: 10px;
-  background-color: rgba(0, 26, 21, 0.6);
-}
-
-#fill7 {
-  width: 10%;
-  height: 20px;
-  border-radius: 10px;
-  background-color: rgba(0, 26, 21, 0.6);
-}
-
-.procent {
-  text-align: center;
-  color: white;
-}
-
-.dci {
-  padding-top: 0;
-  margin-top: 0;
-}
-
-.date {
-  color: #032679e0;
-  font-weight: bold;
-  font-size: 1.3vw;
-}
-
-.underline {
-  color: black;
-  font-weight: bold;
-  font-size: 1.2vw;
-}
-
-.myspanskill {
-  font-size: 1.2vw;
-}
-
-/* Here starts the portfolio page */
-
-#myportfolio {
-  background-color: #303131;
-  background-size: auto;
-  color: #fff;
-}
-
-.firstline {
-  text-align: center;
-}
-
-.mydevices {
-  width: 80%;
-  height: 80%;
-}
-
-.truncate {
-  overflow: hidden;
-}
-
-.microsite {
-  font-size: 2.2vw;
-  color: #ffff00;
-  font-weight: bold;
-}
-
-.microdescrip {
-  font-size: 1.6vw;
-}
-
-.myconcept {
-  padding-left: 10%;
-  font-size: 1.3vw;
-}
-
-.techno {
-  color: #ffff00;
 }
 
 /* ________________________________________________________________
