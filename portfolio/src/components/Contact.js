@@ -25,8 +25,8 @@ const Contact = () => {
           </div>
           <div className=" coluna col6 mylists">
             <ul className="mylists mydetails">
-              <li>Phone: +49 170 9812225</li>
-              <li>E-mail: albert.edelmann@gmail.com</li>
+              <li>✆ Phone: +49 170 9812225</li>
+              <li>✉ E-mail: albert.edelmann@gmail.com</li>
               <li>Skype: albert.edelmann</li>
             </ul>
           </div>

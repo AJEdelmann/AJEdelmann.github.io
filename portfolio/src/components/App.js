@@ -11,8 +11,8 @@ function App() {
   return (
     <div className="App">
       <Home></Home>
-      <Skills></Skills>
       <AboutMe></AboutMe>
+      <Skills></Skills>
       <Portfolio></Portfolio>
       <Contact></Contact>
       <Footer></Footer>

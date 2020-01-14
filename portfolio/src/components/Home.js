@@ -3,14 +3,13 @@ import MyPhoto from "../img/totizeke.png";
 
 const Home = () => {
   return (
-    <div>
-      <div className="linha">
+    <div className="homeWrapper">
+      <div className="linha myNav">
         <header className="header">
           <div className="col12">
             <nav>
               <ul>
                 <li>
-                  HOME
                   <a href="#">HOME</a>
                 </li>
                 <li>
@@ -43,7 +42,7 @@ const Home = () => {
           <h2 className="mywebdev">Web Developer</h2>
           <h3 className="myberlin">based in Berlin, Germany</h3>
         </div>
-        <div className="coluna col8">
+        <div className="coluna col8 photoDiv">
           <img src={MyPhoto} alt="Albert" className="myphoto"></img>
         </div>
       </div>
