@@ -126,6 +126,7 @@ nav ul li {
   padding-right: 3vw;
   display: inline;
   font-size: 1.2vw;
+  color: #10162f;
 }
 
 ul.inline li:last-child,
@@ -136,7 +137,7 @@ ol.inline li:last-child {
 
 hr {
   padding: 0;
-  background-color: #fa0606;
+  background-color: #10162f;
   width: 100%;
   height: auto;
   float: right;
@@ -191,63 +192,9 @@ span {
   height: -webkit-fill-available;
 }
 
-
-.myinsta {
-  width: 10%;
-}
-
-
 img {
   max-width: 100%;
   /* com isso ja ajeita as img dentro do site */
-}
-
-footer {
-  overflow: hidden;
-  text-align: center;
-  clear: both;
-  color: #fff;
-  padding-top: 10px;
-}
-
-.footer {
-  background-color: #fa0606;
-  font-size: 1.2vw;
-  color: #fff;
-  width: 100%;
-  height: auto;
-}
-
-.mycopy {
-  margin: 10px 0 0 0;
-}
-
-.myprivacy,
-.mycv {
-  padding: 15px;
-}
-
-a {
-  text-decoration: none;
-  margin-top: 10px;
-}
-
-nav ul li a {
-  color: #fa0606;
-}
-
-nav ul li a:hover {
-  color: #5a3d08;
-}
-
-.myprivacy a,
-.mycv a {
-  color: #fff;
-}
-
-.myprivacy a:hover,
-.mycv a:hover {
-  color: yellow;
 }
 
 /*here starts the ABOUT page*/
@@ -679,12 +626,17 @@ input:focus {
   outline: none;
 }
 
+.buttonSendMessage {
+  width: 100%;
+  text-align: left;
+}
+
 .botao {
-  background: red;
+  background: #10162f;
   color: #fff;
   border-radius: 3vw;
   font-size: 1.5rem;
-  padding: 0.5rem 1.8rem;
+  padding: 0 1.8rem;
   font-weight: 600;
 }
 
@@ -693,7 +645,7 @@ input:focus {
 }
 
 .botao:hover {
-  background: linear-gradient(to left, #3DBAF7, #1D3B8B);
+  background: linear-gradient(to left, #3DBAF7, #10162f);
 }
 
 /* HERE STARTS THE PRIVACY PAGE */
@@ -722,4 +674,80 @@ input:focus {
   content: "";
   clear: both;
   display: table;
+}
+
+
+/* Footer section */
+
+.footerSection {
+  /* height: 300px; */
+}
+
+.footer {
+  font-size: 1.2vw;
+  background: #10162f;
+  color: #fff;
+  height: 10em;
+}
+
+footer {
+  overflow: hidden;
+  text-align: center;
+  clear: both;
+  color: #fff;
+  padding-top: 10px;
+  height: 100%;
+}
+
+.mycopy {
+  margin: 10px 0 0 0;
+}
+
+.myprivacy,
+.mycv {
+  padding: 15px;
+}
+
+.copy {
+  padding: 15px;
+}
+
+.socialMediaIcons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.myinsta,
+.myLinkedin,
+.myGithub {
+  width: 2rem;
+}
+
+.myLinkedin,
+.myGithub {
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+nav ul li a {
+  color: #10162f;
+}
+
+nav ul li a:hover {
+  color: #5a3d08;
+}
+
+.myprivacy a,
+.mycv a {
+  color: #fff;
+}
+
+.myprivacy a:hover,
+.mycv a:hover {
+  color: yellow;
 }

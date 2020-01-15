@@ -13,15 +13,39 @@ const Footer = () => {
           </div>
           <div className="coluna col4 copy">
             <p>
-              This website was developed with React - AJEdelmann Web Development
+              This website was developed by Albert Edelmann with React and css
             </p>
-            <a
-              href="https://www.instagram.com/albert_toti/"
-              rel="external"
-              target="_blank"
-            >
-              <img src={InstaIcon} alt="instagram" className="myinsta" />
-            </a>
+            <div className="socialMediaIcons">
+              <a
+                href="https://www.instagram.com/albert_toti/"
+                rel="external"
+                target="_blank"
+              >
+                <img src={InstaIcon} alt="instagram" className="myinsta" />
+              </a>
+              <a
+                href="https://github.com/AJEdelmann"
+                rel="external"
+                target="_blank"
+              >
+                <img
+                  src="https://img.icons8.com/ios-filled/50/000000/github.png"
+                  alt="github"
+                  className="myGithub"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/albert-edelmann-023269199/"
+                rel="external"
+                target="_blank"
+              >
+                <img
+                  src="https://img.icons8.com/ios-filled/50/000000/linkedin.png"
+                  alt="linkedin"
+                  className="myLinkedin"
+                />
+              </a>
+            </div>
           </div>
           <div className="coluna col4 myprivacy">
             <span className="myprivacy">

@@ -89,7 +89,13 @@ const Contact = () => {
                 <br />
                 <textarea name="msg" id="msg" rows="5"></textarea>
                 <br />
-                <input type="submit" className="botao" value="Submit &raquo;" />
+                <div className="buttonSendMessage">
+                  <input
+                    type="submit"
+                    className="botao"
+                    value="Submit &raquo;"
+                  />
+                </div>
                 <br />
               </p>
             </form>

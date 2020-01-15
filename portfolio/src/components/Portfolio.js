@@ -1,7 +1,8 @@
 import React from "react";
-import Devices from "../img/devices.png";
 import PianoPlayer from "../img/piano-player.jpeg";
+import Ravenous from "../img/ravenous.jpeg";
 import Ear from "../img/ear.jpeg";
+import Jammming from "../img/jammming.jpeg";
 
 const Portfolio = () => {
   return (
@@ -10,7 +11,7 @@ const Portfolio = () => {
         <div className="row w-100 text-left align-items-center">
           <div className="col">
             <h2 className="myProjectsH2 text-black font-weight-bold mt-4">
-              Selected works
+              Selected projects
             </h2>
             <br />
           </div>
@@ -43,7 +44,7 @@ const Portfolio = () => {
           <div className="card" id="my-card-space">
             <img
               className="card-img-top"
-              src={PianoPlayer}
+              src={Ravenous}
               height="200vh"
               alt="Card image cap"
             />
@@ -67,36 +68,7 @@ const Portfolio = () => {
           <div className="card" id="my-card-space">
             <img
               className="card-img-top"
-              src={PianoPlayer}
-              height="200vh"
-              alt="Card image cap"
-            />
-            <div className="card-body">
-              <h5 className="card-title font-weight-bold">Todo app</h5>
-              <p className="card-text">
-                <p>
-                  <span className="blackSpan">Description: </span>Full Stack
-                  application fetching data from my own API
-                </p>
-                <p>
-                  <span className="blackSpan">Technologies used: </span>React,
-                  Node.js, MongoDB, Zeit
-                </p>
-              </p>
-              <div className="visit-website">
-                <a href="#">Github repository</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="row my-projects">
-        <div className="card-deck my-cards">
-          <div className="card" id="my-card-space">
-            <img
-              className="card-img-top"
-              src={PianoPlayer}
+              src={Jammming}
               height="200vh"
               alt="Card image cap"
             />
@@ -116,6 +88,35 @@ const Portfolio = () => {
               </p>
               <div className="visit-website">
                 <a href="#">Visit website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="row my-projects">
+        <div className="card-deck my-cards">
+          <div className="card" id="my-card-space">
+            <img
+              className="card-img-top"
+              src={PianoPlayer}
+              height="200vh"
+              alt="Card image cap"
+            />
+            <div className="card-body">
+              <h5 className="card-title font-weight-bold">Todo app</h5>
+              <p className="card-text">
+                <p>
+                  <span className="blackSpan">Description: </span>Full Stack
+                  application fetching data from my own API
+                </p>
+                <p>
+                  <span className="blackSpan">Technologies used: </span>React,
+                  Node.js, MongoDB, Zeit
+                </p>
+              </p>
+              <div className="visit-website">
+                <a href="#">Github repository</a>
               </div>
             </div>
           </div>
