@@ -536,6 +536,11 @@ img {
   text-align: end;
 }
 
+#my-card-space:hover {
+  box-shadow: -5px 0 20px 5px rgba(0, 0, 0, .5);
+  transition: all 0.5s ease-out;
+}
+
 /* ________________________________________________________________
 ___________________________________________________________________
               Here starts the contact page
@@ -724,9 +729,19 @@ footer {
   width: 2rem;
 }
 
-.myLinkedin,
+.myinsta {
+  background: black;
+  border-radius: 10px;
+}
+
 .myGithub {
   background: #fff;
+  border-radius: 50%;
+}
+
+.myLinkedin {
+  background: #fff;
+  border-radius: 5px;
 }
 
 a {

@@ -29,7 +29,8 @@ const Portfolio = () => {
               <p className="card-text">
                 <p>
                   <span className="blackSpan">Description: </span>This piano
-                  player can be played with computer keyboards, have fun trying!
+                  player can be played with computer keyboards, have fun
+                  playing!
                 </p>
                 <p>
                   <span className="blackSpan">Technologies used: </span>Pure
@@ -37,7 +38,13 @@ const Portfolio = () => {
                 </p>
               </p>
               <div className="visit-website">
-                <a href="#">Visit website</a>
+                <a
+                  href="https://ajedelmann.github.io/piano-player/index.html"
+                  rel="external"
+                  target="_blank"
+                >
+                  Visit website
+                </a>
               </div>
             </div>
           </div>
