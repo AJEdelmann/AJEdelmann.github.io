@@ -3,7 +3,7 @@ import InstaIcon from "../img/instaicon1.png";
 
 const Footer = () => {
   return (
-    <div className="linha">
+    <div className="footerSection">
       <div className="footer">
         <footer>
           <div className="coluna col4 mycv">
@@ -12,7 +12,9 @@ const Footer = () => {
             </span>
           </div>
           <div className="coluna col4 copy">
-            <p>&copy 2019 - AJEdelmann Web Development</p>
+            <p>
+              This website was developed with React - AJEdelmann Web Development
+            </p>
             <a
               href="https://www.instagram.com/albert_toti/"
               rel="external"

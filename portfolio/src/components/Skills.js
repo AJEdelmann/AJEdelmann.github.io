@@ -2,31 +2,9 @@ import React from "react";
 import darthVader from "../img/darth-vader.png";
 const Skills = () => {
   return (
-    // <div className="skillSection">
-    //   <div className="linha">
-    //     <div className="coluna col12 myMainStack">
-    //       <h2 className="myh2">My main stack</h2>
-    //       <h4 className="myh4">
-    //         <div className="mainStack">
-    //           <div className="tech-skill">JavaScript</div>
-    //           <div className="tech-skill">React</div>
-    //           <div className="tech-skill">React Hooks</div>
-    //           <div className="tech-skill">Node.js</div>
-    //           <div className="tech-skill">Express</div>
-    //           <div className="tech-skill">MongoDB</div>
-    //           <div className="tech-skill">SQL</div>
-    //           <div className="tech-skill">Puppeteer</div>
-    //           <div className="tech-skill">CSS / SASS</div>
-    //           <div className="tech-skill">Bootstrap</div>
-    //         </div>
-    //       </h4>
-    //     </div>
-    //   </div>
-    // </div>
-
     <div className="mySkills">
       <div className="linha">
-        <div className="coluna col10 myknowledge">
+        <div className="coluna col11 myknowledge">
           <h2 className="myh2skill">My Skills</h2>
           <ul className="skills-ul">
             <li className="myliskill">html&css</li>
@@ -61,7 +39,7 @@ const Skills = () => {
             <div id="bar">
               <div id="fill4"></div>
             </div>
-            <div className="graph-qualifications coluna col2">
+            <div className="graph-qualifications coluna">
               <div className="graphic-level-1">
                 <span className="blackSpan">Uh? </span>
                 <span>Next question</span>

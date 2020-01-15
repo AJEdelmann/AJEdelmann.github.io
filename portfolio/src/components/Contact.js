@@ -17,17 +17,27 @@ const Contact = () => {
         </div>
 
         <div className="linha">
-          <div className=" coluna col6 myicon">
-            <i
+          <div className=" coluna col myicon">
+            {/* <i
               className="fas fa-address-card"
               style={{ fontSize: "5em", paddingTop: "10px" }}
-            ></i>
+            ></i> */}
           </div>
-          <div className=" coluna col6 mylists">
+          <div className=" coluna col mylists">
             <ul className="mylists mydetails">
-              <li>✆ Phone: +49 170 9812225</li>
-              <li>✉ E-mail: albert.edelmann@gmail.com</li>
-              <li>Skype: albert.edelmann</li>
+              <li>
+                <span className="contactIcons">✆</span> Phone: +49 170 9812225
+              </li>
+              <li>
+                <span className="contactIcons">✉</span> E-mail:
+                albert.edelmann@gmail.com
+              </li>
+              <li>
+                <span className="contactIcons">
+                  <i className="fab fa-skype"></i>
+                </span>{" "}
+                Skype: albert.edelmann
+              </li>
             </ul>
           </div>
         </div>
@@ -77,8 +87,7 @@ const Contact = () => {
                 to discuss this further. <br />
                 A few more things you should know: <br />
                 <br />
-                <textarea name="msg" id="msg" rows="10"></textarea>
-                <br />
+                <textarea name="msg" id="msg" rows="5"></textarea>
                 <br />
                 <input type="submit" className="botao" value="Submit &raquo;" />
                 <br />

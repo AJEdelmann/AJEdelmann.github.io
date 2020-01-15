@@ -1,37 +1,177 @@
 import React from "react";
 import Devices from "../img/devices.png";
+import PianoPlayer from "../img/piano-player.jpeg";
+import Ear from "../img/ear.jpeg";
 
 const Portfolio = () => {
   return (
-    <div id="myportfolio">
-      <div className="linha">
-        <div className="coluna col12 firstline">
-          <p className="microsite">Microsite</p>
-          <p className="microdescrip">Micro Web page for JC</p>
+    <div>
+      <div className="row my-projects">
+        <div className="row w-100 text-left align-items-center">
+          <div className="col">
+            <h2 className="myProjectsH2 text-black font-weight-bold mt-4">
+              Selected works
+            </h2>
+            <br />
+          </div>
+        </div>
+        <div className="card-deck my-cards">
+          <div className="card" id="my-card-space">
+            <img
+              className="card-img-top"
+              src={PianoPlayer}
+              height="200vh"
+              alt="Card image cap"
+            />
+            <div className="card-body">
+              <h5 className="card-title font-weight-bold">Piano Player</h5>
+              <p className="card-text">
+                <p>
+                  <span className="blackSpan">Description: </span>This piano
+                  player can be played with computer keyboards, have fun trying!
+                </p>
+                <p>
+                  <span className="blackSpan">Technologies used: </span>Pure
+                  JavaScript, html and css
+                </p>
+              </p>
+              <div className="visit-website">
+                <a href="#">Visit website</a>
+              </div>
+            </div>
+          </div>
+          <div className="card" id="my-card-space">
+            <img
+              className="card-img-top"
+              src={PianoPlayer}
+              height="200vh"
+              alt="Card image cap"
+            />
+            <div className="card-body">
+              <h5 className="card-title font-weight-bold">React Ravenous</h5>
+              <p className="card-text">
+                <p>
+                  <span className="blackSpan">Description: </span>A Yelp-like
+                  clone fetching data from Yelp API
+                </p>
+                <p>
+                  <span className="blackSpan">Technologies used: </span>React,
+                  Node.js and css
+                </p>
+              </p>
+              <div className="visit-website">
+                <a href="#">Visit website</a>
+              </div>
+            </div>
+          </div>
+          <div className="card" id="my-card-space">
+            <img
+              className="card-img-top"
+              src={PianoPlayer}
+              height="200vh"
+              alt="Card image cap"
+            />
+            <div className="card-body">
+              <h5 className="card-title font-weight-bold">Todo app</h5>
+              <p className="card-text">
+                <p>
+                  <span className="blackSpan">Description: </span>Full Stack
+                  application fetching data from my own API
+                </p>
+                <p>
+                  <span className="blackSpan">Technologies used: </span>React,
+                  Node.js, MongoDB, Zeit
+                </p>
+              </p>
+              <div className="visit-website">
+                <a href="#">Github repository</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div className="linha truncate">
-        <div className="coluna col12">
-          <img src={Devices} alt="" className="mydevices" />
+      <div className="row my-projects">
+        <div className="card-deck my-cards">
+          <div className="card" id="my-card-space">
+            <img
+              className="card-img-top"
+              src={PianoPlayer}
+              height="200vh"
+              alt="Card image cap"
+            />
+            <div className="card-body">
+              <h5 className="card-title font-weight-bold">Jammming</h5>
+              <p className="card-text">
+                <p>
+                  <span className="blackSpan">Description: </span>A website that
+                  fetches data from Spotify API to allow users to search the
+                  Spotify library, create a custom playlist, then save it to
+                  their Spotify account.
+                </p>
+                <p>
+                  <span className="blackSpan">Technologies used: </span>React,
+                  Node.js and css
+                </p>
+              </p>
+              <div className="visit-website">
+                <a href="#">Visit website</a>
+              </div>
+            </div>
+          </div>
+          <div className="card" id="my-card-space">
+            <img
+              className="card-img-top"
+              src={PianoPlayer}
+              height="200vh"
+              alt="Card image cap"
+            />
+            <div className="card-body">
+              <h5 className="card-title font-weight-bold">
+                Data-server-record-store
+              </h5>
+              <p className="card-text">
+                <p>
+                  <span className="blackSpan">Description: </span>A traditional
+                  RESTfull API
+                </p>
+                <p>
+                  <span className="blackSpan">Technologies used: </span>Node,
+                  Express and Mongoose
+                </p>
+              </p>
+              <div className="visit-website">
+                <a href="#">Visit website</a>
+              </div>
+            </div>
+          </div>
+          <div className="card" id="my-card-space">
+            <img
+              className="card-img-top"
+              src={Ear}
+              height="200vh"
+              alt="Card image cap"
+            />
+            <div className="card-body">
+              <h5 className="card-title font-weight-bold">Music-chords-API</h5>
+              <p className="card-text">
+                <p>
+                  <span className="blackSpan">Description: </span>Traditional
+                  RESTfull API that crawls entire music chords from websites and
+                  store into database
+                </p>
+                <p>
+                  <span className="blackSpan">Technologies used: </span>Node,
+                  Express, Puppeteer and Mongoose
+                </p>
+              </p>
+              <div className="visit-website">
+                <a href="#">Github repository</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div className="linha truncate">
-        <div className="coluna col12 myconcept">
-          <p>
-            <span className="techno">Technologies used: </span> HTML and CSS
-          </p>
-          <p>
-            <span className="techno">
-              Skills implemented and problems I solved:
-            </span>
-            For this project I use the grid technique in order to create my
-            framework.
-          </p>
-        </div>
-      </div>
-      <br />
     </div>
   );
 };

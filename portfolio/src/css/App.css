@@ -21,7 +21,7 @@ body {
 }
 
 .coluna {
-  padding: 0 10px;
+  padding: 0 5px;
   /*espassamento entre colunas, isso influi na conta dos 960px, que dividido por
   12 da 80, menos 10 de cada lado da 60*/
   float: left;
@@ -109,7 +109,11 @@ body {
 
 
 nav {
-  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 20px;
+
 }
 
 
@@ -195,7 +199,6 @@ span {
 
 img {
   max-width: 100%;
-  height: auto;
   /* com isso ja ajeita as img dentro do site */
 }
 
@@ -367,8 +370,16 @@ nav ul li a:hover {
   height: 100vh;
 }
 
+/* .myknowledge {
+  overflow: hidden;
+} */
+
 .myh2skill {
-  margin-bottom: 6rem
+  margin-bottom: 4rem;
+  margin-top: 3rem;
+  text-align: left;
+  font-weight: bold;
+  color: black;
 }
 
 .sk {
@@ -427,19 +438,19 @@ nav ul li a:hover {
 }
 
 .graphic-bar-2 {
-  top: -12.900rem;
+  top: -13rem;
 }
 
 .graphic-bar-3 {
-  top: -17.155rem;
+  top: -17rem;
 }
 
 .graphic-bar-4 {
-  top: -21.32rem;
+  top: -21rem;
 }
 
 .graphic-bar-5 {
-  top: -25.3rem;
+  top: -25rem;
 }
 
 
@@ -475,17 +486,17 @@ nav ul li a:hover {
 
 #fill1 {
   width: 100%;
-  height: 70%;
+  height: 72%;
 }
 
 #fill2 {
   width: 100%;
-  height: 60%;
+  height: 59%;
 }
 
 #fill3 {
   width: 100%;
-  height: 50%;
+  height: 52%;
 }
 
 #fill4 {
@@ -513,32 +524,34 @@ nav ul li a:hover {
   color: #fff;
 }
 
-
 .graphic-level-1,
 .graphic-level-2,
 .graphic-level-3,
 .graphic-level-4,
 .graphic-level-5 {
   position: relative;
-  top: 18.8rem;
   left: 1.3rem;
   width: 8rem;
 }
 
+.graphic-level-1 {
+  top: 18.7rem;
+}
+
 .graphic-level-2 {
-  top: 12.1rem;
+  top: 11.6rem;
 }
 
 .graphic-level-3 {
-  top: 5.1rem;
+  top: 4.5rem;
 }
 
 .graphic-level-4 {
-  top: -0.4rem;
+  top: -1rem;
 }
 
 .graphic-level-5 {
-  top: -6.8rem;
+  top: -7.8rem;
 }
 
 .blackSpan {
@@ -549,6 +562,31 @@ nav ul li a:hover {
   position: absolute;
   top: -1rem;
   left: 7rem;
+}
+
+/* ============================================= */
+/* ======== Here starts Portfolio section ========= */
+/* ============================================= */
+.my-projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, #c7d7e6, #c7d7e633);
+  min-height: 600px;
+  color: black;
+}
+
+.myProjectsH2 {
+  margin-left: 13vw
+}
+
+.my-projects .my-cards {
+  margin-bottom: 25px;
+  width: 90%;
+}
+
+.visit-website {
+  text-align: end;
 }
 
 /* ________________________________________________________________
@@ -566,7 +604,7 @@ _________________________________________________________________*/
 .mybrief,
 .myinterest {
   color: black;
-  font-size: 1.5em;
+  font-size: 1.3em;
   line-height: 50px;
 }
 
@@ -575,39 +613,54 @@ _________________________________________________________________*/
 }
 
 .mydetails {
-  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.5rem;
+}
+
+#myh1contact {
+  color: black;
+  font-weight: 600;
 }
 
 .myh2contact {
-  font-size: 2.4vw;
+  font-size: 2.4rem;
   text-align: center;
-  color: red;
+  color: black;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.contactIcons {
+  color: rgb(11, 11, 99);
 }
 
 .mylists {
   list-style: none;
   padding: 0;
   color: black;
+  font-weight: 600;
 }
 
+
+
 .clientEntry {
-  color: red;
+  color: rgb(11, 11, 99);
   border: none;
   border-radius: 1vw;
   background: #eee6e6;
   padding-left: 0.7rem;
+  margin-left: 0.3rem;
 }
 
 .clientEntry:focus {
   outline: none;
 }
 
-input {
-  padding: 0.4rem;
-}
-
 input::placeholder {
-  color: red;
+  color: rgb(11, 11, 99);
+  /* opacity: 0.3; */
 }
 
 input:focus {
@@ -631,7 +684,7 @@ input:focus {
   color: #fff;
   border-radius: 3vw;
   font-size: 1.5rem;
-  padding: 0.5rem 0.8rem;
+  padding: 0.5rem 1.8rem;
   font-weight: 600;
 }
 

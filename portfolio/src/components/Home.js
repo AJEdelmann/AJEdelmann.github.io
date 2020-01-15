@@ -16,7 +16,10 @@ const Home = () => {
                   <a href=".myabout">ABOUT</a>
                 </li>
                 <li>
-                  PORTFOLIO
+                  <a href=".myabout">SKILLS</a>
+                </li>
+                <li>
+                  SELECTED PROJECTS
                   {/* <a href="portfolio.html">PORTFOLIO</a> */}
                 </li>
                 <li>
