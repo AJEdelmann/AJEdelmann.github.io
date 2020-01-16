@@ -6,7 +6,7 @@ import Jammming from "../img/jammming.jpeg";
 
 const Portfolio = () => {
   return (
-    <div>
+    <div className="section-projects">
       <div className="row my-projects">
         <div className="row w-100 text-left align-items-center">
           <div className="col">

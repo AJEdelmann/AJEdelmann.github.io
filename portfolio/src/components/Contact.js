@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="section-contact">
       <div className="mycontact">
         <div className="linha">
           <div className=" coluna col12 mygetintouch">

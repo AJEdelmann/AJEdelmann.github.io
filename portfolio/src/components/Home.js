@@ -1,5 +1,6 @@
 import React from "react";
 import MyPhoto from "../img/totizeke.png";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Home = () => {
   return (
@@ -9,22 +10,65 @@ const Home = () => {
           <div className="col12">
             <nav>
               <ul>
-                <li>
-                  <a href="#">HOME</a>
+                <li className="nav-li">
+                  <Link
+                    activeClass="active"
+                    to="homeWrapper"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    HOME
+                  </Link>
                 </li>
-                <li>
-                  <a href=".myabout">ABOUT</a>
+                <li className="nav-li">
+                  <Link
+                    activeClass="active"
+                    to="myabout"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    ABOUT
+                  </Link>
                 </li>
-                <li>
-                  <a href=".myabout">SKILLS</a>
+                <li className="nav-li">
+                  <Link
+                    activeClass="active"
+                    to="mySkills"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    SKILLS
+                  </Link>
                 </li>
-                <li>
-                  SELECTED PROJECTS
-                  {/* <a href="portfolio.html">PORTFOLIO</a> */}
+                <li className="nav-li">
+                  <Link
+                    activeClass="active"
+                    to="section-projects"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    PROJECTS
+                  </Link>
                 </li>
-                <li>
-                  CONTACT
-                  {/* <a href="contact.html">CONTACT</a> */}
+                <li className="nav-li">
+                  <Link
+                    activeClass="active"
+                    to="section-contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    CONTACT
+                  </Link>
                 </li>
               </ul>
             </nav>
